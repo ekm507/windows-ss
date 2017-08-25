@@ -2,6 +2,9 @@
 
 #include "ssserver.h"
 
+#include <takess.h> /* hoom?! */
+
+
 int main(void)
 {
 	serverConnect(/* sth */);
@@ -10,7 +13,8 @@ int main(void)
 		if( serverAsk() )
 		{
 			ss = takeSS();
-			serverSend( ss );
+			ScreenCapture(int x, int y, int width, int height, char *filename)
+			serverSendFile( filename );
 		}
 	}
 	return 0;

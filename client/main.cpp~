@@ -1,5 +1,9 @@
 //start: 96-06-03
+
 #include "ssserver.h"
+
+#include <takess.h> /* hoom?! */
+
 
 int main(void)
 {
